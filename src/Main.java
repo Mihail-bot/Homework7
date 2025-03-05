@@ -5,27 +5,28 @@ public class Main {
         while (savings < 2459000) {
             savings = savings + 15000;
             month = month + 1;
+            System.out.println("Месяц " + month + ", сумма накоплений равна " + savings + " рублей");
         }
-        System.out.println("Месяц " + month + ", сумма накоплений равна " + savings + " рублей");
+
         System.out.println("Задача 2");
         int i = 0;
         while (i < 10) {
             i++;
-            System.out.print(" " + i + " ");
+            System.out.print(i + " ");
         }
         System.out.println();
-        while (i > 0) {
-            System.out.print(" " + i + " ");
-            i--;
+        for (i =10;i>=1; i--) {
+            System.out.print(i + " ");
+
         }
         System.out.println();
         System.out.println("Заданеи 3 ");
-        int y = 120000000, bitthRate = 17, mortalityRate = 8, increase, totalmortality;
+        int y = 120000000, birthRate = 17, mortalityRate = 8, increase, totalMortality;
         while (i < 10) {
             i++;
-            increase = y / 1000 * bitthRate;
-            totalmortality = y / 1000 * mortalityRate;
-            y = y + increase - totalmortality;
+            increase = y / 1000 * birthRate;
+            totalMortality = y / 1000 * mortalityRate;
+            y = y + increase - totalMortality;
             System.out.println("Год " + i + ", численность населения составляет " + y);
         }
         System.out.println("Задание 4");
